@@ -220,7 +220,7 @@ function excelSerialToDateString(serial: any) {
 router.post('/csv-to-json-convertor',
     [currentUser, requireAuth],
     async (req: Request, res: Response) => {
-
+console.log("here")
         const { url, token, isPublic, validationArr, delimiterCSV, chunkSplitRowCount } = req.body;
 
         const destFilePath = `${url.split(".").pop() == "xlsx" ? url.split("/").slice(0, -1).join("/") : "DataImport"}/${token}/`;
