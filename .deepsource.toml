@@ -1,13 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "typescript"
-enabled = true
+name = "javascript"
 
-[[analyzers]]
-name = "sast"
-enabled = true
-
-[[analyzers]]
-name = "secrets"
-enabled = true  
+  [analyzers.meta]
+  environment = ["nodejs"]
